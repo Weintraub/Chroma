@@ -50,7 +50,7 @@
   .tagline {
     font-size: clamp(0.95rem, 2vw, 1.2rem);
     font-style: italic;
-    color: #888;
+    color: #aaa;
     letter-spacing: 0.08em;
     margin-bottom: 4rem;
   }
@@ -65,7 +65,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.65rem;
     letter-spacing: 0.3em;
-    color: #555;
+    color: #888;
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
@@ -81,7 +81,7 @@
     background: transparent;
     border: none;
     border-right: 0.5px solid #2a2a2a;
-    color: #555;
+    color: #888;
     font-family: 'Cormorant Garamond', serif;
     font-size: 1rem;
     padding: 0.75rem 0.5rem;
@@ -105,7 +105,7 @@
     flex: 1;
     background: transparent;
     border: 0.5px solid #2a2a2a;
-    color: #555;
+    color: #888;
     font-family: 'Cormorant Garamond', serif;
     cursor: pointer;
     padding: 1.25rem 1rem;
@@ -123,7 +123,7 @@
     display: block;
   }
   .mode-card.active .mode-title { color: #e8e4dc; }
-  .mode-card:not(.active) .mode-title { color: #444; }
+  .mode-card:not(.active) .mode-title { color: #777; }
 
   .mode-desc {
     font-size: 0.88rem;
@@ -135,8 +135,8 @@
   .begin-btn {
     margin-top: 1rem;
     background: transparent;
-    border: 0.5px solid #444;
-    color: #888;
+    border: 0.5px solid #666;
+    color: #aaa;
     font-family: 'Cinzel', serif;
     font-size: 0.75rem;
     letter-spacing: 0.35em;
@@ -186,7 +186,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.6rem;
     letter-spacing: 0.3em;
-    color: rgba(255,255,255,0.2);
+    color: rgba(255,255,255,0.55);
     pointer-events: none;
     z-index: 10;
   }
@@ -196,8 +196,8 @@
     top: 1.25rem;
     right: 1.5rem;
     background: transparent;
-    border: 0.5px solid rgba(255,255,255,0.12);
-    color: rgba(255,255,255,0.25);
+    border: 0.5px solid rgba(255,255,255,0.25);
+    color: rgba(255,255,255,0.5);
     font-family: 'Cinzel', serif;
     font-size: 0.6rem;
     letter-spacing: 0.3em;
@@ -236,7 +236,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.7rem;
     letter-spacing: 0.35em;
-    color: #444;
+    color: #777;
     margin-bottom: 3rem;
   }
 
@@ -253,7 +253,7 @@
   .archetype-desc {
     font-size: 1rem;
     font-style: italic;
-    color: #666;
+    color: #999;
     margin-bottom: 3rem;
     line-height: 1.6;
   }
@@ -262,7 +262,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.58rem;
     letter-spacing: 0.3em;
-    color: #444;
+    color: #777;
     margin-bottom: 1rem;
     text-transform: uppercase;
   }
@@ -288,7 +288,7 @@
     font-size: 0.65rem;
     font-family: 'Cinzel', serif;
     letter-spacing: 0.05em;
-    color: #444;
+    color: #777;
     white-space: nowrap;
   }
 
@@ -307,7 +307,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.6rem;
     letter-spacing: 0.2em;
-    color: #444;
+    color: #777;
     width: 1.8rem;
     flex-shrink: 0;
   }
@@ -332,7 +332,7 @@
 
   .hsl-value {
     font-size: 0.85rem;
-    color: #666;
+    color: #999;
     width: 3.5rem;
     text-align: right;
     font-style: italic;
@@ -341,7 +341,7 @@
   .play-again-btn {
     background: transparent;
     border: 0.5px solid #2a2a2a;
-    color: #444;
+    color: #777;
     font-family: 'Cinzel', serif;
     font-size: 0.65rem;
     letter-spacing: 0.3em;
@@ -350,7 +350,7 @@
     transition: all 0.3s ease;
     margin-top: 1rem;
   }
-  .play-again-btn:hover { border-color: #666; color: #aaa; }
+  .play-again-btn:hover { border-color: #888; color: #ccc; }
 
   .version-tag {
     position: absolute;
@@ -359,7 +359,7 @@
     font-family: 'Cinzel', serif;
     font-size: 0.55rem;
     letter-spacing: 0.2em;
-    color: #333;
+    color: #555;
   }
 </style>
 </head>
@@ -395,7 +395,7 @@
     </div>
 
     <button class="begin-btn" id="begin-btn">BEGIN</button>
-    <div class="version-tag">v1.1</div>
+    <div class="version-tag">v1.2</div>
   </div>
 
   <div class="screen hidden" id="game-screen">
