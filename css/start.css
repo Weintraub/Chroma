@@ -1,0 +1,123 @@
+#start-screen {
+  gap: 0;
+  padding: 3rem;
+}
+
+.wordmark {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  color: #e8e4dc;
+  margin-bottom: 0.35em;
+}
+
+.tagline {
+  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  font-style: italic;
+  color: #aaa;
+  letter-spacing: 0.08em;
+  margin-bottom: 4rem;
+}
+
+.config-section {
+  width: 100%;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+}
+
+.config-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: #888;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.option-row {
+  display: flex;
+  gap: 0;
+  border: 0.5px solid #2a2a2a;
+}
+
+.opt-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  border-right: 0.5px solid #2a2a2a;
+  color: #888;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  padding: 0.75rem 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  letter-spacing: 0.04em;
+}
+.opt-btn:last-child { border-right: none; }
+.opt-btn:hover { color: #aaa; background: #161616; }
+.opt-btn.active {
+  color: #e8e4dc;
+  background: #1c1c1c;
+}
+
+.mode-row {
+  display: flex;
+  gap: 12px;
+}
+
+.mode-card {
+  flex: 1;
+  background: transparent;
+  border: 0.5px solid #2a2a2a;
+  color: #888;
+  font-family: 'Cormorant Garamond', serif;
+  cursor: pointer;
+  padding: 1.25rem 1rem;
+  text-align: left;
+  transition: all 0.25s ease;
+}
+.mode-card:hover { border-color: #444; background: #111; }
+.mode-card.active { border-color: #666; background: #161616; color: #e8e4dc; }
+
+.mode-title {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.mode-card.active .mode-title { color: #e8e4dc; }
+.mode-card:not(.active) .mode-title { color: #777; }
+
+.mode-desc {
+  font-size: 0.88rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: inherit;
+}
+
+.begin-btn {
+  margin-top: 1rem;
+  background: transparent;
+  border: 0.5px solid #666;
+  color: #aaa;
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.35em;
+  padding: 1rem 3.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.begin-btn:hover:not(:disabled) { border-color: #aaa; color: #e8e4dc; }
+.begin-btn:disabled { opacity: 0.25; cursor: not-allowed; }
+
+.version-tag {
+  position: absolute;
+  bottom: 1.25rem;
+  right: 1.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  color: #555;
+}
