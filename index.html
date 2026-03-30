@@ -191,6 +191,23 @@
     z-index: 10;
   }
 
+  .stop-btn {
+    position: absolute;
+    top: 1.25rem;
+    right: 1.5rem;
+    background: transparent;
+    border: 0.5px solid rgba(255,255,255,0.12);
+    color: rgba(255,255,255,0.25);
+    font-family: 'Cinzel', serif;
+    font-size: 0.6rem;
+    letter-spacing: 0.3em;
+    padding: 0.5rem 1.1rem;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    z-index: 20;
+  }
+  .stop-btn:hover { border-color: rgba(255,255,255,0.35); color: rgba(255,255,255,0.6); }
+
   .flash-overlay {
     position: fixed;
     inset: 0;
@@ -379,6 +396,7 @@
       <div class="progress-fill" id="progress-fill"></div>
     </div>
     <div class="round-counter" id="round-counter"></div>
+    <button class="stop-btn hidden" id="stop-btn">STOP</button>
   </div>
 
   <div class="screen hidden" id="results-screen">
@@ -560,6 +578,7 @@ document.querySelectorAll('[data-mode]').forEach(btn => {
 
 document.getElementById('begin-btn').addEventListener('click', startGame);
 document.getElementById('play-again-btn').addEventListener('click', () => showScreen('start'));
+document.getElementById('stop-btn').addEventListener('click', endGame);
 
 function showScreen(name) {
   startScreen.classList.toggle('hidden', name !== 'start');
@@ -570,6 +589,7 @@ function showScreen(name) {
 function startGame() {
   initState();
   showScreen('game');
+  document.getElementById('stop-btn').classList.toggle('hidden', config.rounds !== 0);
   nextRound();
 }
 
